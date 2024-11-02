@@ -1,8 +1,9 @@
 # Requestify
-
+```bash
+  npm i @emilo/requestify
+```
 ```javascript
 const requestify = require("@emilo/requestify").default;
-
 (async () => {
   let listen, close, listening, routes;
   try {
