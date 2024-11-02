@@ -1,13 +1,14 @@
 {
   "name": "@emilo/requestify",
-  "version": "0.1.0-alpha",
+  "version": "0.1.4-alpha",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "http",

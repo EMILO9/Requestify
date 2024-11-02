@@ -21,7 +21,7 @@ const requestify = require("@emilo/requestify").default;
     await listen();
   } catch (error) {
     console.error(error);
-    if (listening) await close();
+    if (listening()) await close();
     process.exit(1);
   }
 })();
