@@ -1,4 +1,5 @@
 import { Server } from "http";
+import RequestifyError from "./requestifyError";
 export default function close(server: Server) {
   return async () => {
     try {
@@ -9,7 +10,7 @@ export default function close(server: Server) {
         });
       });
     } catch (error) {
-      throw error;
+      throw new RequestifyError((error as Error).message);
     }
   };
 }

@@ -1,4 +1,5 @@
 import { Server } from "http";
+import RequestifyError from "./requestifyError";
 export default function listen(server: Server) {
   return async ({
     port = 3000,
@@ -14,7 +15,7 @@ export default function listen(server: Server) {
       });
       return { port, hostname, backlog };
     } catch (error) {
-      throw error;
+      throw new RequestifyError((error as Error).message);
     }
   };
 }

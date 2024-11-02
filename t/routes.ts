@@ -1,6 +1,11 @@
 import Route from "./routeType";
+import RequestifyError from "./requestifyError";
 export default function routes(r: Route[]) {
   return (routes: Route[]) => {
-    r.push(...routes);
+    try {
+      r.push(...routes);
+    } catch (error) {
+      throw new RequestifyError((error as Error).message);
+    }
   };
 }
