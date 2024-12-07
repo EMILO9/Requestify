@@ -1,10 +1,10 @@
 {
   "name": "@emilo/requestify",
-  "version": "0.1.7-alpha",
+  "version": "0.1.8-alpha",
   "main": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "types": "dist/types/main.d.ts",
   "files": [
-    "dist/"
+    "dist"
   ],
   "scripts": {
     "build": "tsc",
