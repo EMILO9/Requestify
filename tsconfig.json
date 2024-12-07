@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES6", // ECMAScript target version
-    "module": "commonjs", // Module code generation
+    "target": "ES6", // Specify ECMAScript target version
+    "module": "commonjs", // Specify module code generation
     "declaration": true, // Generate .d.ts files
     "declarationDir": "./dist/types", // Output for declaration files
-    "outDir": "./dist", // Output directory for compiled JS files
-    "rootDir": "./", // Root directory that includes both main.ts and the "t" folder
+    "outDir": "./dist/src", // Redirect output structure to the "dist" directory
+    "rootDir": "./src", // Specify the root directory of input files (now the "src" folder)
     "strict": true, // Enable all strict type-checking options
-    "esModuleInterop": true, // Ensures proper interop with ES modules
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
     "skipLibCheck": true, // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true // Enforce consistent casing for file imports
+    "forceConsistentCasingInFileNames": true // Disallow inconsistently-cased references to the same file
   },
-  "include": ["main.ts", "t/**/*"], // Include both main.ts and all files under "t"
+  "include": ["src/**/*.ts"], // Include all TypeScript files under the "src" directory
   "exclude": ["node_modules"] // Exclude node_modules
 }

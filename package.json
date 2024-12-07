@@ -1,7 +1,7 @@
 {
   "name": "@emilo/requestify",
-  "version": "0.1.8-alpha",
-  "main": "dist/main.js",
+  "version": "0.1.9-alpha",
+  "main": "dist/src/main.js",
   "types": "dist/types/main.d.ts",
   "files": [
     "dist"
@@ -20,6 +20,7 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.8.0",
+    "typedoc": "^0.27.3",
     "typescript": "^5.6.3"
   }
 }
