@@ -4,7 +4,7 @@ import close from "./close";
 import listener from "./listener";
 import routes from "./routes";
 import Route from "./routeType";
-export function init() {
+export default function init() {
   const server = http.createServer();
   const r: Route[] = [];
   listener(server, r);
