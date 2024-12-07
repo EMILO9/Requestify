@@ -3,7 +3,6 @@ import listen from "./t/listen";
 import close from "./t/close";
 import listener from "./t/listener";
 import routes from "./t/routes";
-import Route from "./t/routeType";
 export function init() {
   const server = http.createServer();
   const r: Route[] = [];
@@ -15,4 +14,3 @@ export function init() {
     routes: routes(r),
   };
 }
-export type { Route };

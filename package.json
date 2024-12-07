@@ -1,6 +1,6 @@
 {
   "name": "@emilo/requestify",
-  "version": "0.1.4-alpha",
+  "version": "0.1.7-alpha",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
