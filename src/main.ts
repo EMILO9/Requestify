@@ -4,6 +4,9 @@ import close from "./close";
 import listener from "./listener";
 import routes from "./routes";
 import Route from "./routeType";
+/**
+ * Initializes the HTTP server and returns methods to manage it.
+ */
 export default function init() {
   const server = http.createServer();
   const r: Route[] = [];
