@@ -1,12 +1,6 @@
 import { Server } from "http";
 import RequestifyError from "./requestifyError";
-  /**
-   * above
-   */
 export default function listen(server: Server) {
-  /**
-   * below
-   */
   return async ({
     port = 3000,
     hostname = "localhost",
