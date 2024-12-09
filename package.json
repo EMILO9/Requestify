@@ -1,6 +1,6 @@
 {
   "name": "@emilo/requestify",
-  "version": "0.1.12-alpha",
+  "version": "0.1.13-alpha",
   "main": "dist/src/main.js",
   "types": "dist/types/main.d.ts",
   "files": [
@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "docs": "npx typedoc src/main.ts"
   },
   "keywords": [
     "http",
