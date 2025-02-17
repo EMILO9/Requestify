@@ -1,0 +1,23 @@
+{
+  "name": "@emilo/requestify",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "dist/entry.js",
+  "types": "dist/entry.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "node",
+    "request"
+  ],
+  "author": "emilo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "superstruct": "^2.0.2"
+  }
+}
